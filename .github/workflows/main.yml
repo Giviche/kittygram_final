@@ -49,7 +49,6 @@ jobs:
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
       run: |
-        pytest
         python -m ruff check backend/
         cd backend/
         python manage.py test
